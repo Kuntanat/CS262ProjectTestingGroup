@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>โปรโมชั่น - ชาไทย 1 แถม 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/buy1get1.css">
+</head>
+<body>
+<div class="phone">
+  <header class="topbar">
+    <button class="back" onclick="window.location.href='index.html'" aria-label="ย้อนกลับ">
+      <svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="#fff"/></svg>
+    </button>
+  </header>
+  <div class="topbar-shadow"></div>
+
+  <main class="content">
+    <div class="photo-wrap">
+      <img id="food-photo" src="/img-/thai_tea.jpg" alt="ชาไทย">
+      <div class="promo-badge">
+        <span class="badge-text">1 แถม 1</span>
+      </div>
+    </div>
+
+    <h1 class="title" id="item-title">ชาไทย</h1>
+    
+    <div class="promo-box">
+      <div class="promo-icon">🎉</div>
+      <div class="promo-detail">
+        <div class="promo-title">โปรโมชั่นพิเศษ!</div>
+        <div class="promo-desc">ซื้อ 1 แก้ว แถมฟรี 1 แก้ว</div>
+      </div>
+    </div>
+
+    <section id="sizeWrap"></section>
+    <section id="addonsWrap"></section>
+
+    <div class="line column">
+      <label class="label" for="note">เพิ่มเติม</label>
+      <textarea id="note" placeholder="โปรดระบุรายละเอียด"></textarea>
+    </div>
+
+    <div class="summary-box">
+      <div class="summary-line">
+        <span class="summary-label">จำนวนที่สั่ง:</span>
+        <span class="summary-value" id="orderQty">1 แก้ว</span>
+      </div>
+      <div class="summary-line highlight">
+        <span class="summary-label">ได้รับทั้งหมด:</span>
+        <span class="summary-value free" id="totalQty">2 แก้ว</span>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="main-qty">
+        <button id="mainMinus">−</button>
+        <span id="mainQty">1</span>
+        <button id="mainPlus">+</button>
+      </div>
+      <button id="confirmBtn" class="btn" onclick="addToCart()">
+        ยืนยัน · <span id="totalPrice">฿0</span>
+      </button>
+    </div>
+  </main>
+
+  <div class="bottombar"></div>
+</div>
+
+<script defer src="/js/buy1get1.js"></script>
+</body>
+</html>
